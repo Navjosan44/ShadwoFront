@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using TextPro = UnityEngine.TextMesh;
+using TMPro;
 
 namespace Shadowfront.Accessibility
 {
@@ -10,7 +10,7 @@ namespace Shadowfront.Accessibility
         public static SubtitleManager Instance { get; private set; }
 
         public Canvas subtitleCanvas;
-        public Text subtitleText;
+        public TextMeshProUGUI subtitleText;
         public float defaultDuration = 4f;
         public int fontSize = 24;
 

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Shadowfront.Accessibility
 {
@@ -107,17 +107,17 @@ namespace Shadowfront.Accessibility
         
         public void SaveSettings()
         {
-           Prefs.SetInt(\"ColorblindMode\", (int)settings.colorblindMode);
-           Prefs.SetInt(\"Subtitles\", settings.subtitlesEnabled ? 1 : 0);
-           Prefs.SetFloat(\"SubtitleSize\", settings.subtitleSize);
-           Prefs.SetInt(\"ScreenShake\", settings.screenShakeEnabled ? 1 : 0);
-           Prefs.SetFloat(\"UIScale\", settings.uiScale);
-           Prefs.SetInt(\"HighContrast\", settings.highContrast ? 1 : 0);
-           Prefs.SetInt(\"AutoAim\", settings.autoAimAssist ? 1 : 0);
-           Prefs.SetFloat(\"AutoAimStrength\", settings.autoAimStrength);
-           Prefs.SetInt(\"HoldToFire\", settings.holdToFire ? 1 : 0);
-           Prefs.SetInt(\"HoldToAim\", settings.holdToAim ? 1 : 0);
-           Prefs.Save();
+           PlayerPrefs.SetInt(\"ColorblindMode\", (int)settings.colorblindMode);
+           PlayerPrefs.SetInt(\"Subtitles\", settings.subtitlesEnabled ? 1 : 0);
+           PlayerPrefs.SetFloat(\"SubtitleSize\", settings.subtitleSize);
+           PlayerPrefs.SetInt(\"ScreenShake\", settings.screenShakeEnabled ? 1 : 0);
+           PlayerPrefs.SetFloat(\"UIScale\", settings.uiScale);
+           PlayerPrefs.SetInt(\"HighContrast\", settings.highContrast ? 1 : 0);
+           PlayerPrefs.SetInt(\"AutoAim\", settings.autoAimAssist ? 1 : 0);
+           PlayerPrefs.SetFloat(\"AutoAimStrength\", settings.autoAimStrength);
+           PlayerPrefs.SetInt(\"HoldToFire\", settings.holdToFire ? 1 : 0);
+           PlayerPrefs.SetInt(\"HoldToAim\", settings.holdToAim ? 1 : 0);
+           PlayerPrefs.Save();
         }
     }
 }

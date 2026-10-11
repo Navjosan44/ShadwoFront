@@ -51,7 +51,7 @@ namespace Shadowfront.Localization
         {
             if(System.Array.IndexOf(supportedLanguages, lang) < 0) return;
             currentLanguage = lang;
-           Prefs.SetString("Language", lang);
+           PlayerPrefs.SetString("Language", lang);
             OnLanguageChanged?.Invoke(lang);
         }
 
